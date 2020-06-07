@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/table.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="css/media.css">
+  <title>My schedule</title>
+</head>
+
+<body class="grid">
+  <header>
+    <h1>Classes</h1>
+  </header>
+  <main class="main">
+    <table class="schedule">
+      <caption>
+        Weekly schedule, Spring 2020
+      </caption>
+      <colgroup>
+        <col id="firstCol" />
+        <col class="secondCol" span="2" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Class</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="3"> April 26 - June 16</td>
+        </tr>
+
+      </tfoot>
+      <tbody>
+
+        <tr>
+          <th rowspan="2">Monday</th>
+          <td data-label="Class">Front-End Web Dev</td>
+          <td data-label="Time">13:00 - 14:45</td>
+        </tr>
+        <tr>
+          <td data-label="Class">IT - 206</td>
+          <td data-label="Time">18:00 - 20:45</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td colspan="2">No class</td>
+
+        </tr>
+
+
+        <tr>
+          <th rowspan="2">Wednesday</th>
+          <td data-label="Class">Front-End Web Dev</td>
+          <td data-label="Time">13:00 - 14:45</td>
+
+        </tr>
+        <tr>
+          <td data-label="Class">IT - 206</td>
+          <td data-label="Time">18:00 - 20:45</td>
+        </tr>
+
+
+        <tr>
+          <th>Thursday</th>
+          <td colspan='2'>No class</td>
+        </tr>
+        <tr>
+          <th data-label="day">Friday</th>
+          <td data-label="Class">Front-End Web Dev</td>
+          <td data-label="Time">13:00 - 14:45</td>
+        </tr>
+
+
+
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <h3>Not too hard of a week :)</h3>
+  </footer>
+</body>
+
+</html>

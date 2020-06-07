@@ -1,0 +1,123 @@
+/* Media Queries*/
+
+@media only screen and (max-width: 360px) {
+
+  table,
+  thead,
+  tbody,
+  caption,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  tbody td{
+      position: relative;
+  }
+
+  td::before{
+      content: attr(data-label);
+      position: relative;
+      top: 0px;
+      left: 0px;
+      padding: 15px;
+      width: 40px;
+      font-weight: bold;
+  }
+
+
+  thead, tfoot{
+      display: none;
+  }
+
+  tr {
+    border: 1px solid;
+
+  }
+
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+
+      "head"
+      "main"
+
+      "footer";
+
+  }
+
+
+  header {
+    grid-area: head;
+    text-align: center;
+  }
+
+  .main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+
+/* Media for tablet screen sizes*/
+
+@media (min-width: 760px) {
+
+  .grid {
+
+    display: grid;
+    grid-template-areas:
+      "header "
+      "main "
+      "footer ";
+  }
+
+  header {
+    grid-area: header;
+    vertical-align: center;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+/* Laptop screen */
+
+@media (min-width:1200px){
+  .grid {
+    display:grid;
+    grid-template-areas:
+    ". header header ."
+    ". main main ."
+    ". footer footer .";
+  }
+
+
+  header {
+    grid-area: header;
+
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  body{
+    font-size: 1.5em;
+  }
+
+}
